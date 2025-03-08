@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Main container styles */
+.contacts-container {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Page title */
+.contacts-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Contact card styles */
+nav {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* For mobile screens, stack the items */
+@media (max-width: 768px) {
+  nav {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+
+/* Contact information headings */
+nav h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4a4a4a;
+  overflow-wrap: break-word;
+}
+
+/* Username styling */
+nav h4:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Email styling */
+nav h4:nth-child(2) {
+  color: #4a90e2;
+}
+
+/* Message styling */
+nav h4:nth-child(3) {
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Delete button */
+nav button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #c0392b;
+}
+
+nav button:active {
+  transform: scale(0.98);
+}
+
+/* Empty state message */
+.no-contacts {
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+  margin-top: 3rem;
+  font-style: italic;
+}

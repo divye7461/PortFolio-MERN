@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Main container */
+.about-container {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome heading */
+.about-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 0.5rem;
+}
+
+/* Section titles */
+.about-container p:nth-of-type(1),
+.about-container p:nth-of-type(3) {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4a90e2;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* List container */
+.about-container p:nth-of-type(2),
+.about-container p:nth-of-type(4) {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+/* List items */
+.about-container li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Custom bullet points */
+.about-container li:before {
+  content: "•";
+  color: #4a90e2;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Highlight for important text */
+.highlight {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Animation for section entrance */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.about-container > * {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .about-container h1 {
+    font-size: 1.6rem;
+  }
+  
+  .about-container p:nth-of-type(1),
+  .about-container p:nth-of-type(3) {
+    font-size: 1.2rem;
+  }
+}
